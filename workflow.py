@@ -245,7 +245,7 @@ def bot_obser(**context):
 
 with DAG(
         dag_id="workflow",
-        schedule_interval="@daily",
+        schedule_interval="@hourly",
         default_args={
             "owner": "airflow",
             "retries": 1,
