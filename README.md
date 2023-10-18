@@ -22,23 +22,23 @@ Aqui podemos ver que ambos agentes son definidos como funciones para poder ser u
 
 ![image](https://github.com/AlejandroPaisano/airflow/assets/91223611/6a7527ea-17f2-46f2-bc09-cae506ac46b0)
 
-En esta imagen podemos observar el DAG y el como se define, cabe aclarar que ddebemos informarle al codigo que estas instrucciones seran ejecutadas con la biblioteca dag que antes importamos. Lo primero es el ID del dag, este sirve como identificador principal para el programa
+En esta imagen podemos observar el DAG y el como se define, cabe aclarar que ddebemos informarle al codigo que estas instrucciones seran ejecutadas con la biblioteca DAG que antes importamos. Lo primero es el ID del DAG, este sirve como identificador principal para el programa
 y para decirle como debe guardar esste dag en la base de datos, despues esta el cronograma que le daremos, en este caso elegir por hora, debido a que quiero ver la eficiencia de los robots y tener datos de su ejecucion para guardar para despues.
 
-Mas abajo tenemos los argumentos del DAG, el owner es a quien le pertenece el dag dentro del sistema, aqui usamos el usuario por defecto, retries es la cantidad de intentos que le daremos al codigo antes de considerarlo un fallo, retry_delay es la cantidad de tiempo que
+Mas abajo tenemos los argumentos del DAG, el owner es a quien le pertenece el DAG dentro del sistema, aqui usamos el usuario por defecto, retries es la cantidad de intentos que le daremos al codigo antes de considerarlo un fallo, retry_delay es la cantidad de tiempo que
 daremos entre intentos y el start date es cuando empezara la tarea oficialmente, se recomienda inbsertar una fecha anterior al dia de inicio oficial.
 
 ![image](https://github.com/AlejandroPaisano/airflow/assets/91223611/91f04190-c114-4b9e-aa2b-240fbc3082f2)
 
-por ultimo tenemos las variables de ambos agentes, les ponemos un numbre similar a su definicion para identificarlos facilmente. Aqui tenemos task_id que es el como se guardara esta actividdad edntro de airflow, luego tenemos el python_callable que es la funcion que llamaran
-al ejecutars. Por ultimo esta provide_contxt, su funcion es ayudarnos a pasar ciertos argumentos mas facilmente entre funciones, aunque aqui no se usa por que las funciones no estan conectadas.
+Por ultimo tenemos las variables de ambos agentes, les ponemos un numbre similar a su definicion para identificarlos facilmente. Aqui tenemos task_id que es el como se guardara esta actividdad edntro de airflow, luego tenemos el python_callable que es la funcion que llamaran
+al ejecutarse. Por ultimo esta provide_contxt, su funcion es ayudarnos a pasar ciertos argumentos mas facilmente entre funciones, aunque aqui no se usa por que las funciones no estan conectadas.
 
 Debido a que ambas funciones estan puestas asi, estas se ejecutaran en paralelo, cosa que deseamos debido a que queremos medir su eficiencia. si quisieramos ejecutarlas una detras de la otra, usariamos elcomando ">>>" indicando que la funcion que va a la izquierda se
 ejecuta primero
 
 ![image](https://github.com/AlejandroPaisano/airflow/assets/91223611/a476e6b7-decf-495e-a284-a7aba35482fd)
 
-Dentro de airflow tenemos esta vista, esta nos permite ver los dags que tenemos, cuales estan activos y cuales estan pausados, en este caso, solo el dag de worflow, donde esta la IA, esta acivo. En esta imagen se ve tambien donde esta el dueño de ese dago y cuantas "runs"
+Dentro de airflow tenemos esta vista, esta nos permite ver los dags que tenemos, cuales estan activos y cuales estan pausados, en este caso, solo el DAG de workflow, donde esta la IA, esta acivo. En esta imagen se ve tambien donde esta el dueño de ese DAG y cuantas "runs"
 o ejecuciones del DAG se han hecho.
 
 Tambien es posible filtrar el DAG por su estadod de ejecucion mas reciente y por sus nombres, ademas de mostrarnos los resultados de su ultima ejecucion. Al final de la pagina, se puede ver un bote de basura que nos sirve para eliminar el DAG y una flecha que sirve para
