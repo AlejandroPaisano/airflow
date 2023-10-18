@@ -23,7 +23,7 @@ Aqui podemos ver que ambos agentes son definidos como funciones para poder ser u
 ![image](https://github.com/AlejandroPaisano/airflow/assets/91223611/6a7527ea-17f2-46f2-bc09-cae506ac46b0)
 
 En esta imagen podemos observar el DAG y el como se define, cabe aclarar que ddebemos informarle al codigo que estas instrucciones seran ejecutadas con la biblioteca DAG que antes importamos. Lo primero es el ID del DAG, este sirve como identificador principal para el programa
-y para decirle como debe guardar esste dag en la base de datos, despues esta el cronograma que le daremos, en este caso elegir por hora, debido a que quiero ver la eficiencia de los robots y tener datos de su ejecucion para guardar para despues.
+y para decirle como debe guardar esste dag en la base de datos, despues esta el cronograma que le daremos, en este caso elegimos por hora, debido a que quiero ver la eficiencia de los robots y tener datos de su ejecucion para guardar para despues.
 
 Mas abajo tenemos los argumentos del DAG, el owner es a quien le pertenece el DAG dentro del sistema, aqui usamos el usuario por defecto, retries es la cantidad de intentos que le daremos al codigo antes de considerarlo un fallo, retry_delay es la cantidad de tiempo que
 daremos entre intentos y el start date es cuando empezara la tarea oficialmente, se recomienda inbsertar una fecha anterior al dia de inicio oficial.
