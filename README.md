@@ -58,7 +58,7 @@ Tambien podemos ver detalles que nos explican como opera el algoritmo, el propio
 ![image](https://github.com/AlejandroPaisano/airflow/assets/91223611/c4ea1429-7ce3-4334-855e-6dce64467b5f)
 
 
-# conclusion
+# Conclusion
 
 Ariflow es una herramienta sumamente poderos sobre todo cuando se trata de poder programar flujos de trabajo y automatizarlos para recoger informacion. Lo unico malo que este tiene es lo dificil que llega a ser el poder usarlo de forma adecuada dentro de windows,
 dado que no esta hecho para operar de forma nativa en este sistema, asi que hacerlo funcionar puede ser un dolor de cabeza, aun asi, eso no significa que no haya herramientas para poder usarlo mas facilmente, un ejemplo es docker que solo requier unas imagenes para operarlo.
