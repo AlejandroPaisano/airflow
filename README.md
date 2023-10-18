@@ -63,4 +63,5 @@ Tambien podemos ver detalles que nos explican como opera el algoritmo, el propio
 Ariflow es una herramienta sumamente poderos acuandos e trata de poder programa flujos de trabajo y automatizarlos para recoger informacion. Lo unico malo que este tiene es lo dificil que llega a ser el poder usarlo de forma adecuada dentro de windows,
 dado que no esta hecho para operar de forma nativa en este sistema, asi que hacerlo funcionar puede ser un dolor de cabeza, aun asi, eso no significa que no haya herramientas para poder usarlo mas facilmente, un ejemplo es docker que solo requier unas imagenes para operarlo.
 
-Por ultimo, cabe decir que esta experiencia fue bastante interessante, instalar airflow fue complicado, pero eso me llevo a conocer docker que veo como una herramienta mas util, en general, un proceso que fue complicado per resulto en bastante aprendizaje al final
+Por ultimo, cabe decir que esta experiencia fue bastante interessante, instalar airflow fue complicado, pero eso me llevo a conocer docker que veo como una herramienta mas util, en general, un proceso que fue complicado per resulto en bastante aprendizaje al final.
+Como not adicional, parece que airflow tiene problemas para mostrar los datos del agente, probablemente debido a la cantidad de impresiones
